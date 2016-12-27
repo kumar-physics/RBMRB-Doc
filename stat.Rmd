@@ -1,0 +1,24 @@
+---
+title: "Statistics"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+RBMRB package has some functions to generate checmial shift histogram or chemical shift density plots directly from BMRB. Full set of pregenerated plots can be found [here](http://www.bmrb.wisc.edu/RBMRB_doc/hist)
+
+### Histogram
+
+```{r}
+plt<-chemical_shift_hist('GLY')
+plt
+plt<-chemical_shift_hist('GLY','CA')
+plt
+```
+### Density
+```{r}
+plt<-chemical_shift_hist('GLY',type='density')
+plt
+plt<-chemical_shift_hist('GLY','CA',type='density')
+plt
+```

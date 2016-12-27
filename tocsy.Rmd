@@ -1,0 +1,30 @@
+---
+title: "TOCSY"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+This page explains the simulation 1H-1H TOCSY spectum directly from BMRB for a given entry or list of entries
+
+```{r}
+library(RBMRB)
+```
+
+### Single entry simulation
+```{r}
+plt<-TOCSY(15060)
+plt
+```
+
+### Multiple entries simulation
+```{r}
+plt<-TOCSY(c(17074,17076,17077))
+plt
+plt<-HSQC_15N(c(17074,17076,17077),interactive = F)
+plt
+```
+
+
+
+

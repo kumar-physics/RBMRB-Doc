@@ -1,0 +1,12 @@
+---
+title: "RBMRB"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+
+
+
+
+RBMRB is a library to fetch NMR chemical shift data directly from BMRB into R environment as a data frame in R. This facilitates access to BMRB data for statistical analysis and data visualization. It is using the [BMRB-API](https://github.com/uwbmrb/BMRB-API) to fetch the data from BMRB database

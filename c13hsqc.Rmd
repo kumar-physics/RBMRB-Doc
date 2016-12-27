@@ -1,0 +1,34 @@
+---
+title: "C13-HSQC"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+This page explains the simulation C13-HSQC spectum directly from BMRB for a given entry or list of entries
+
+```{r}
+library(RBMRB)
+```
+
+### Single entry simulation
+```{r}
+plt<-HSQC_13C(15060)
+plt
+```
+
+### Multiple entries simulation
+```{r}
+plt<-HSQC_13C(c(17074,17076,17077))
+plt
+plt<-HSQC_13C(c(17074,17076,17077),type='line')
+plt
+plt<-HSQC_13C(c(17074,17076,17077),interactive = F)
+plt
+plt<-HSQC_13C(c(17074,17076,17077),type='line',interactive = F)
+plt
+```
+
+
+
+

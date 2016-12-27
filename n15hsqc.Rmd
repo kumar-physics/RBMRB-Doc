@@ -1,0 +1,34 @@
+---
+title: "N15-HSQC"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+This page explains the simulation N15-HSQC spectum directly from BMRB for a given entry or list of entries
+
+```{r}
+library(RBMRB)
+```
+
+### Single entry simulation
+```{r}
+plt<-HSQC_15N(15060)
+plt
+```
+
+### Multiple entries simulation
+```{r}
+plt<-HSQC_15N(c(17074,17076,17077))
+plt
+plt<-HSQC_15N(c(17074,17076,17077),type='line')
+plt
+plt<-HSQC_15N(c(17074,17076,17077),interactive = F)
+plt
+plt<-HSQC_15N(c(17074,17076,17077),type='line',interactive = F)
+plt
+```
+
+
+
+

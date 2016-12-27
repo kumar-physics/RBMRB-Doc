@@ -1,0 +1,156 @@
+---
+title: "Usage"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+
+This page explains the general usage of RBMRB package. Detailed documentaion can be found in the help pages of RBMRB package.
+
+
+```{r}
+library(RBMRB)
+```
+
+## Data access
+BMRB data can be imported in three ways
+
+* **Entry method** Chemical shift data from single or multiple entries
+* **Atom method** Chemical shift data from all entries for a given atom
+* **Redidue methos** Cehcmial shift data from all entries for a given amio acid/nucleic acid
+
+### Entry method
+#### fetch_entry_chemical_shifts:
+This function will fetch the ‘Atom_chem_shift’ loop from a NMR-STAR file for a given entry or a list of entries in CSV format. This function works on both macromolecules and metabolites data base. For metabolites entry ids should have right prefix (example ‘bmse000034’)
+
+Example:
+```{r}
+df1<-fetch_entry_chemical_shifts(15060)
+df2<-fetch_entry_chemical_shifts(c(17074,17076,17077))
+df2<-fetch_entry_chemical_shifts(c('17074','17076','17077'))
+df3<-fetch_entry_chemical_shifts(c('bmse000034','bmse000035','bmse000036'))
+```
+These data frames have the following columns
+```{r}
+colnames(df1)
+```
+Sample data outpu
+```{r}
+head(df1)
+```
+### Atom method
+fetch_atom_chemical_shifts:
+This function will fetch the chemical shift data from all the entries for a given atom. The atom name should be in NMR-STAR atom nomenclature.
+Example:
+```{r}
+df4<-fetch_atom_chemical_shifts('CG2')
+df5<-fetch_atom_chemical_shifts('C9')
+```
+These data frames have the following columns
+```{r}
+colnames(df4)
+```
+Sample data outpu
+```{r}
+head(df4)
+```
+
+### Residue method
+fetch_res_chemical_shifts:
+his function will fetch the chemical shift data from all the entries for a given amino acid (or) nucleic acid. The residue name should be in NMR-STAR  nomenclature. You may optionally specify atom name also
+
+Example:
+```{r}
+df6<-fetch_res_chemical_shifts('GLY')
+df7<-fetch_res_chemical_shifts('HIS','CA')
+```
+These data frames have the following columns
+```{r}
+colnames(df6)
+```
+Sample data output
+```{r}
+head(df6)
+```
+
+## Data manipulation
+There are few data manipulation functions are available to rearrange the data frame for easy plottling
+
+### convert_cs_to_n15hsqc:
+This function will reformat the chemical shift data frame into a data frame which is easy to plot N15-HSQC spectrum
+
+Example 
+```{r}
+n15hsqc1<-convert_cs_to_n15hsqc(df1)
+n15hsqc2<-convert_cs_to_n15hsqc(df2)
+```
+The output will look like
+```{r}
+head(n15hsqc1)
+```
+This data frame is easy to plot using any plotting library
+```{r}
+library(ggplot2)
+plt1<-ggplot(n15hsqc1)+geom_point(aes(x=H,y=N))
+plt1
+plt2<-ggplot(n15hsqc2)+geom_point(aes(x=H,y=N,color=Entry_ID))
+plt2
+plt3<-ggplot(n15hsqc2)+geom_point(aes(x=H,y=N,color=Entry_ID))+geom_line(aes(x=H,y=N,group=Comp_index_ID))
+plt3
+```
+
+### convert_cs_to_c13hsqc:
+This function will reformat the chemical shift data frame into a data frame which is easy to plot C13-HSQC spectrum
+
+Example 
+```{r}
+c13hsqc1<-convert_cs_to_c13hsqc(df1)
+c13hsqc2<-convert_cs_to_c13hsqc(df2)
+```
+The output will look like
+```{r}
+head(c13hsqc1)
+```
+This data frame is easy to plot using any plotting library
+```{r}
+library(ggplot2)
+plt1<-ggplot(c13hsqc1)+geom_point(aes(x=H,y=C))
+plt1
+plt2<-ggplot(c13hsqc2)+geom_point(aes(x=H,y=C,color=Entry_ID))
+plt2
+plt3<-ggplot(c13hsqc2)+geom_point(aes(x=H,y=C,color=Entry_ID))+geom_line(aes(x=H,y=C,group=Comp_index_ID))
+plt3
+```
+
+### convert_cs_to_tocsy:
+This function will reformat the chemical shift data frame into a data frame which is easy to plot the TOCSY spectrum from the data. Note : Since both dimensions have proton chemical shifts, the columns are named as Val.x and Val.y
+
+Example
+```{r}
+tocsy1<-convert_cs_to_tocsy(df1)
+tocsy2<-convert_cs_to_tocsy(df2)
+```
+after conversion the data will look like
+```{r}
+head(tocsy1)
+```
+
+plotting TOCSY spectrum
+```{r}
+library(ggplot2)
+plt1<-ggplot(tocsy1)+geom_point(aes(x=Val.x,y=Val.y))
+plt1
+plt2<-ggplot(tocsy2)+geom_point(aes(x=Val.x,y=Val.y,color=Entry_ID))
+plt2
+```
+
+### filter_residue:
+This function will filter the data frame and remove all non standard amino acids. The data frame should contain the amino acid information in the Comp_ID column
+
+Example
+```{r}
+df6<-fetch_atom_chemical_shifts('CG2')
+df7<-filter_residue(df6)
+```
+after filtering the data frame contains data only from standard 20 amino acids

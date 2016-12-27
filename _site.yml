@@ -1,0 +1,48 @@
+name: "RBMRB"
+navbar:
+  title: "RBMRB"
+  href: index.html
+  left:
+    - text: "Installation"
+      href: install.html
+    - text: "Usage"
+      href: usage.html
+    - text: "Simulation"
+      menu:
+        - text: "N15-HSQC"
+          href: n15hsqc.html
+        - text: "C13-HSQC"
+          href: c13hsqc.html
+        - text: "1H-1H TOCSY"
+          href: tocsy.html
+    - text: "Statistics"
+      href: stat.html
+    - text: "Correlation plots"
+      menu:
+        - text: "HA-CA"
+          href: ha_ca.html
+        - text: "HB-CB"
+          href: hb_cb.html
+        - text: "HA-HB"
+          href: ha_hb.html
+        - text: "CA-CB"
+          href: ca_cb.html
+        - text: "CA-N"
+          href: ca_n.html
+        - text: "CB-N"
+          href: cb_n.html
+        - text: "CD-N"
+          href: cd_n.html
+        - text: "CE-N"
+          href: ce_n.html
+        - text: "H-N"
+          href: h_n.html
+        - text: "HD21-HD22"
+          href: hd21_hd22.html
+        - text: "HE21-HE22"
+          href: he21_he22.html
+        - text: "More..."
+          href: more.html
+  right:
+  - text: "BMRB-Statistics"
+    href: http://www.bmrb.wisc.edu/hist/
