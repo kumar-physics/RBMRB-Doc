@@ -1,0 +1,13 @@
+---
+title: "CE-N"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+Chemical shift correlation plot between CE and N in various amino acids
+
+```{r}
+plt<-chemical_shift_corr('CE*','N')
+plt
+```

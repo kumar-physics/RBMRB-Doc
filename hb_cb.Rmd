@@ -1,0 +1,13 @@
+---
+title: "HB-CB"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+Chemical shift correlation plot between HB and CB in various amino acids
+
+```{r}
+plt<-chemical_shift_corr('HB*','CB*')
+plt
+```

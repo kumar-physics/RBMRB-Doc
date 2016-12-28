@@ -1,0 +1,13 @@
+---
+title: "H-N"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+Chemical shift correlation plot between H and N in various amino acids
+
+```{r}
+plt<-chemical_shift_corr('H','N')
+plt
+```

@@ -1,0 +1,13 @@
+---
+title: "HE21-HE22"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+Chemical shift correlation plot between HE21 and HE22
+
+```{r}
+plt<-chemical_shift_corr('HE21','HE22')
+plt
+```

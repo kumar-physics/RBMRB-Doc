@@ -1,0 +1,13 @@
+---
+title: "HD21-HD22"
+output:
+  html_document:
+    template: pandoc_template.html
+---
+
+Chemical shift correlation plot between HD21 and HD22 
+
+```{r}
+plt<-chemical_shift_corr('HD21','HD22')
+plt
+```
