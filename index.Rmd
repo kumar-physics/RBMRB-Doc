@@ -7,6 +7,9 @@ output:
 
 
 
+In recent years R is becoming one of the most commonly used programming language in the scientific community for data analysis and visualization. As an effort to provide data analysis tool kits specific to BMRB data model and easy access to BMRB data in R environment, BMRB has developed RBMRB package  
 
+RBMRB is a R package to fetch NMR chemical shift data directly from BMRB database into your own R environment. It also includes several data manipulation and visualization functions. It is using the [BMRB-API](https://github.com/uwbmrb/BMRB-API) to fetch the data from BMRB database
 
-RBMRB is a library to fetch NMR chemical shift data directly from BMRB into R environment as a data frame in R. This facilitates access to BMRB data for statistical analysis and data visualization. It is using the [BMRB-API](https://github.com/uwbmrb/BMRB-API) to fetch the data from BMRB database
+RBMRB is available through [CRAN]( https://CRAN.R-project.org/package=RBMRB) and [GitHub](https://github.com/uwbmrb/RBMRB)
+

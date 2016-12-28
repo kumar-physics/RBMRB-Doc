@@ -5,16 +5,15 @@ output:
     template: pandoc_template.html
 ---
 
-#Installation
 ## Method 1 (Easy method)
 
-RBMRB version 2.0 is available in CRAN archive and it can be installed using the following command.
+RBMRB version 2.0 is available in [CRAN archive](https://CRAN.R-project.org/package=RBMRB) and it can be installed using the following command.
 ```{r eval=FALSE}
 install.packages("RBMRB")
 ```
-This will automatically install all the dependencies. Please make sure all the dependicies installed corretly otherwise, it will complain during runtime.
+This will automatically install all the dependencies. Please make sure all the dependencies are installed corretly otherwise, you will get error messages during runtime. 
 
-## Method 2
+## Method 2 (Manual installation from source)
 
 RBMRB library has been developed and tested in R version 3.3.x. It requires the following R packages preinstalled
 
@@ -24,7 +23,7 @@ RBMRB library has been developed and tested in R version 3.3.x. It requires the 
 * ggplot2 to simulate spectra (version 2.1.0 or later)
 * plotly for interactive graphics in simulated spectra (version 4.5.2 or later)
 
-Users should make sure that the above packages have been installed correctly with the required versions, before proceeding to RBMRB installation.
+Please make sure that the correct version of the above packages are already installed.
 
 Here is the instruction to install those packages. Open your R and use the following command
 ```{r eval=FALSE}
@@ -32,16 +31,16 @@ install.packages(c("httr","data.table","rjson","ggplot2","plotly"))
 ```
 Once the necessary packages have been installed, proceed with RMRBM installation. The source file can be downloaded from GitHub
 
-After downloading the source file, use the following command to install RBMRB library
+After downloading the source file, use the following command to install RBMRB 
 
 ```{r eval=FALSE}
 install.packages("~/Downloads/RBMRB_2.0.tar.gz",repos=NULL,type="source")
 ```
 Note: provide the correct path to the downloaded file.
 
-##Method 3 (development version)
+##Method 3 (Development version)
 
-If you have devtools library in your R, then you can install the development version directly from GitHub.
+If you have devtools library installed in your R, then you can install the development version directly from GitHub.
 ```{r eval=FALSE}
 library(devtools)
 install_github("uwbmrb/RBMRB/RBMRB")

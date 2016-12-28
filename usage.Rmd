@@ -17,12 +17,12 @@ library(RBMRB)
 BMRB data can be imported in three ways
 
 * **Entry method** Chemical shift data from single or multiple entries
-* **Atom method** Chemical shift data from all entries for a given atom
-* **Redidue methos** Cehcmial shift data from all entries for a given amio acid/nucleic acid
+* **Atom method** Chemical shift data of a particular atom
+* **Redidue methos** Cehcmial shift data of an amio acid/nucleic acid
 
 ### Entry method
 #### fetch_entry_chemical_shifts:
-This function will fetch the ‘Atom_chem_shift’ loop from a NMR-STAR file for a given entry or a list of entries in CSV format. This function works on both macromolecules and metabolites data base. For metabolites entry ids should have right prefix (example ‘bmse000034’)
+This function will fetch the ‘Atom_chem_shift’ loop from a NMR-STAR file for a given entry or a list of entries. This function works on both macromolecules and metabolites data base. For metabolites entry id should have right prefix (example ‘bmse000034’)
 
 Example:
 ```{r}
@@ -35,12 +35,12 @@ These data frames have the following columns
 ```{r}
 colnames(df1)
 ```
-Sample data outpu
+Sample data output
 ```{r}
 head(df1)
 ```
 ### Atom method
-fetch_atom_chemical_shifts:
+####fetch_atom_chemical_shifts:
 This function will fetch the chemical shift data from all the entries for a given atom. The atom name should be in NMR-STAR atom nomenclature.
 Example:
 ```{r}
@@ -51,14 +51,14 @@ These data frames have the following columns
 ```{r}
 colnames(df4)
 ```
-Sample data outpu
+Sample data output
 ```{r}
 head(df4)
 ```
 
 ### Residue method
-fetch_res_chemical_shifts:
-his function will fetch the chemical shift data from all the entries for a given amino acid (or) nucleic acid. The residue name should be in NMR-STAR  nomenclature. You may optionally specify atom name also
+####fetch_res_chemical_shifts:
+This function will fetch the chemical shift data from all the entries for a given amino acid (or) nucleic acid. The residue name should be in NMR-STAR  nomenclature. You may optionally specify atom name as a parameter
 
 Example:
 ```{r}
@@ -75,11 +75,10 @@ head(df6)
 ```
 
 ## Data manipulation
-There are few data manipulation functions are available to rearrange the data frame for easy plottling
+There are few data manipulation functions available to rearrange the data frame for easy visualization
 
 ### convert_cs_to_n15hsqc:
-This function will reformat the chemical shift data frame into a data frame which is easy to plot N15-HSQC spectrum
-
+This function will reformat the chemical shift data frame into a simple dataframe that contains algorithmically combined proton and nitrogen chemical shifts in two columns
 Example 
 ```{r}
 n15hsqc1<-convert_cs_to_n15hsqc(df1)
@@ -101,7 +100,7 @@ plt3
 ```
 
 ### convert_cs_to_c13hsqc:
-This function will reformat the chemical shift data frame into a data frame which is easy to plot C13-HSQC spectrum
+This function will reformat the chemical shift data frame into a simple dataframe that contains proton and carbon chemical shifts in two columns
 
 Example 
 ```{r}
@@ -124,7 +123,7 @@ plt3
 ```
 
 ### convert_cs_to_tocsy:
-This function will reformat the chemical shift data frame into a data frame which is easy to plot the TOCSY spectrum from the data. Note : Since both dimensions have proton chemical shifts, the columns are named as Val.x and Val.y
+This function will reformat the chemical shift data frame into a simple dataframe that contains algorithmically combined proton shifts in two columns. Note : Since both dimensions have proton chemical shifts, the columns are named as Val.x and Val.y
 
 Example
 ```{r}

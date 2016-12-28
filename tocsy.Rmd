@@ -5,7 +5,7 @@ output:
     template: pandoc_template.html
 ---
 
-This page explains the simulation 1H-1H TOCSY spectum directly from BMRB for a given entry or list of entries
+This page explains how to simulate 1H-1H TOCSY spectum directly from BMRB database for a given entry or list of entries
 
 ```{r}
 library(RBMRB)

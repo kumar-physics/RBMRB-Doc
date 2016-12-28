@@ -17,7 +17,7 @@ navbar:
           href: tocsy.html
     - text: "Statistics"
       href: stat.html
-    - text: "Correlation plots"
+    - text: "Correlation Plots"
       menu:
         - text: "HA-CA"
           href: ha_ca.html

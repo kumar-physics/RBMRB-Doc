@@ -90,7 +90,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Correlation plots
+    Correlation Plots
      
     <span class="caret"></span>
   </a>
@@ -145,16 +145,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header" class="contentwrap">
 <h1 class="title">Installation</h1>
 </div>
-<div id="installation" class="section level1">
-<h1>Installation</h1>
 <div id="method-1-easy-method" class="section level2">
 <h2>Method 1 (Easy method)</h2>
-<p>RBMRB version 2.0 is available in CRAN archive and it can be installed using the following command.</p>
+<p>RBMRB version 2.0 is available in <a href="https://CRAN.R-project.org/package=RBMRB">CRAN archive</a> and it can be installed using the following command.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;RBMRB&quot;</span>)</code></pre></div>
-<p>This will automatically install all the dependencies. Please make sure all the dependicies installed corretly otherwise, it will complain during runtime.</p>
+<p>This will automatically install all the dependencies. Please make sure all the dependencies are installed corretly otherwise, you will get error messages during runtime.</p>
 </div>
-<div id="method-2" class="section level2">
-<h2>Method 2</h2>
+<div id="method-2-manual-installation-from-source" class="section level2">
+<h2>Method 2 (Manual installation from source)</h2>
 <p>RBMRB library has been developed and tested in R version 3.3.x. It requires the following R packages preinstalled</p>
 <ul>
 <li>httr to import data from BMRB web server(version 1.2.1 or later)</li>
@@ -163,19 +161,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>ggplot2 to simulate spectra (version 2.1.0 or later)</li>
 <li>plotly for interactive graphics in simulated spectra (version 4.5.2 or later)</li>
 </ul>
-<p>Users should make sure that the above packages have been installed correctly with the required versions, before proceeding to RBMRB installation.</p>
+<p>Please make sure that the correct version of the above packages are already installed.</p>
 <p>Here is the instruction to install those packages. Open your R and use the following command</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;httr&quot;</span>,<span class="st">&quot;data.table&quot;</span>,<span class="st">&quot;rjson&quot;</span>,<span class="st">&quot;ggplot2&quot;</span>,<span class="st">&quot;plotly&quot;</span>))</code></pre></div>
 <p>Once the necessary packages have been installed, proceed with RMRBM installation. The source file can be downloaded from GitHub</p>
-<p>After downloading the source file, use the following command to install RBMRB library</p>
+<p>After downloading the source file, use the following command to install RBMRB</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;~/Downloads/RBMRB_2.0.tar.gz&quot;</span>,<span class="dt">repos=</span><span class="ot">NULL</span>,<span class="dt">type=</span><span class="st">&quot;source&quot;</span>)</code></pre></div>
 <p>Note: provide the correct path to the downloaded file.</p>
 </div>
 <div id="method-3-development-version" class="section level2">
-<h2>Method 3 (development version)</h2>
-<p>If you have devtools library in your R, then you can install the development version directly from GitHub.</p>
+<h2>Method 3 (Development version)</h2>
+<p>If you have devtools library installed in your R, then you can install the development version directly from GitHub.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(devtools)
 <span class="kw">install_github</span>(<span class="st">&quot;uwbmrb/RBMRB/RBMRB&quot;</span>)</code></pre></div>
-</div>
 </div>
 <!--#include virtual="/includes/footer.shtml" -->
