@@ -18,6 +18,8 @@
 .Rproj.user/
 
 # produced vignettes
+_site/
+RBMRB_Doc/
 vignettes/*.html
 vignettes/*.pdf
 
