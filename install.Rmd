@@ -7,7 +7,7 @@ output:
 
 ## Method 1 (Easy method)
 
-RBMRB version 2.0 is available in [CRAN archive](https://CRAN.R-project.org/package=RBMRB) and it can be installed using the following command.
+RBMRB version 2.0.2 is available in [CRAN archive](https://CRAN.R-project.org/package=RBMRB) and it can be installed using the following command.
 ```{r eval=FALSE}
 install.packages("RBMRB")
 ```

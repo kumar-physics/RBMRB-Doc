@@ -1,0 +1,345 @@
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> setwd('/home/kumaran/git/RBMRB-Doc')
+> rmarkdown::render_site()
+  |                                                                         |                                                                 |   0%  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: unnamed-chunk-1
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: unnamed-chunk-2
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: unnamed-chunk-3
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS c13hsqc.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output c13hsqc.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e443304095.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e455f7f864.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS ca_cb.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output ca_cb.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e46f83def4.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e4478454c2.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS ca_n.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output ca_n.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e42d84923f.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e470cce409.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS cb_n.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output cb_n.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e4961cac6.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e440f28da0.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS cd_n.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output cd_n.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e4777c8ef4.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e434f78e65.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS ce_n.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output ce_n.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e41db7f195.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e456e4b97.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS ha_ca.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output ha_ca.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e448bbc1b0.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e49b4428f.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS ha_hb.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output ha_hb.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e42a33d01d.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e46c487f61.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS hb_cb.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output hb_cb.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e42caa53e0.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e420300e95.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS hd21_hd22.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output hd21_hd22.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e42404fcac.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e4443afa20.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS he21_he22.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output he21_he22.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e41fa2ca56.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e46c463740.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-1
+
+/usr/bin/pandoc +RTS -K512m -RTS h_n.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output h_n.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e43a7e163c.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e427f0aff4.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS index.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output index.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e41caf2395.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e449ed0001.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |........................                                         |  38%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |.........................................                        |  62%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |.........................................................        |  88%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+
+/usr/bin/pandoc +RTS -K512m -RTS install.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output install.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e4487fa29f.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e4dfcb3fb.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS more.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output more.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e449500998.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e438dc1520.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: unnamed-chunk-1
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: unnamed-chunk-2
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: unnamed-chunk-3
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS n15hsqc.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output n15hsqc.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e4266e4ad9.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e477a70d1.html --mathjax 
+/usr/bin/pandoc +RTS -K512m -RTS README.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output README.html --smart --email-obfuscation none --standalone --section-divs --template /home/kumaran/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e466cfda6f.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e463864d8d.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+  |                                                                         |                                                                 |   0%  |                                                                         |................                                                 |  25%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: unnamed-chunk-1
+  |                                                                         |.................................................                |  75%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-2
+
+/usr/bin/pandoc +RTS -K512m -RTS stat.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output stat.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e469d4dfb2.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e42256546e.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: unnamed-chunk-1
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: unnamed-chunk-2
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: unnamed-chunk-3
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS tocsy.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output tocsy.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e47824dfa5.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e424ac393e.html --mathjax 
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  ordinary text without R code
+
+  |                                                                         |...                                                              |   4%
+label: unnamed-chunk-1
+  |                                                                         |....                                                             |   7%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: unnamed-chunk-2
+  |                                                                         |.......                                                          |  11%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: unnamed-chunk-3
+  |                                                                         |..........                                                       |  16%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  18%
+label: unnamed-chunk-4
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  22%
+label: unnamed-chunk-5
+  |                                                                         |................                                                 |  24%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  27%
+label: unnamed-chunk-6
+  |                                                                         |...................                                              |  29%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: unnamed-chunk-7
+  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  36%
+label: unnamed-chunk-8
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: unnamed-chunk-9
+  |                                                                         |...........................                                      |  42%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  44%
+label: unnamed-chunk-10
+  |                                                                         |..............................                                   |  47%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  49%
+label: unnamed-chunk-11 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  53%
+label: unnamed-chunk-12 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |....................................                             |  56%
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  58%
+label: unnamed-chunk-13
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  62%
+label: unnamed-chunk-14
+  |                                                                         |..........................................                       |  64%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: unnamed-chunk-15
+  |                                                                         |.............................................                    |  69%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  71%
+label: unnamed-chunk-16
+  |                                                                         |................................................                 |  73%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  76%
+label: unnamed-chunk-17
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: unnamed-chunk-18
+  |                                                                         |.....................................................            |  82%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  84%
+label: unnamed-chunk-19
+  |                                                                         |........................................................         |  87%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: unnamed-chunk-20
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  93%
+label: unnamed-chunk-21
+  |                                                                         |..............................................................   |  96%
+  ordinary text without R code
+
+  |                                                                         |................................................................ |  98%
+label: unnamed-chunk-22
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+/usr/bin/pandoc +RTS -K512m -RTS usage.utf8.md --to html --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output usage.html --smart --email-obfuscation none --standalone --section-divs --template pandoc_template.html --highlight-style pygments --include-before-body /tmp/RtmplkUYU2/rmarkdown-str21e46e8872df.html --variable navbar=1 --variable body_padding=51 --variable header_padding=56 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplkUYU2/rmarkdown-str21e442ec9b43.html --mathjax 
+
+Output created: _site/index.html
+> 
+> 
+> proc.time()
+   user  system elapsed 
+477.904   6.316 697.450 

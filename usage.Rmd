@@ -19,6 +19,7 @@ BMRB data can be imported in three ways
 * **Entry method** Chemical shift data from single or multiple entries
 * **Atom method** Chemical shift data of a particular atom
 * **Redidue methos** Cehcmial shift data of an amio acid/nucleic acid
+* **Local data** User data in NMR-STAR format (Not available or deposited in BMRB)
 
 ### Entry method
 #### fetch_entry_chemical_shifts:
@@ -73,6 +74,20 @@ Sample data output
 ```{r}
 head(df6)
 ```
+
+### Local data
+User may also have the posibility of visualizing their own data using RBMRB tools. They can upload their data into BMRB API server and visualize the data. The data will be stored for seven datas and the user will get unique token to access the data, which can be used insted of BMRB ID. This allows the user to share his data visualization anywhere around the world. 
+
+#### Upload NMR-STAR file 
+```{r eval=FALSE}
+token<-export_star_data('hpr_chem_shift.str')
+```
+
+#### To visualize the data
+```{r eval=FALSE}
+hsqc_spec<-HSQC_15N(token)
+```
+
 
 ## Data manipulation
 There are few data manipulation functions available to rearrange the data frame for easy visualization

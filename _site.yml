@@ -43,6 +43,5 @@ navbar:
           href: he21_he22.html
         - text: "More..."
           href: more.html
-  right:
-  - text: "BMRB-Statistics"
-    href: http://www.bmrb.wisc.edu/hist/
+    - text: "BMRB-Statistics"
+      href: http://www.bmrb.wisc.edu/histogram/
